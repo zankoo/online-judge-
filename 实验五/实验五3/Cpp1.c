@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 int main(void)
 {
 	long a = 101,b = 2,c = 1,d = 0;

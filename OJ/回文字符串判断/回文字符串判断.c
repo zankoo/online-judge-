@@ -2,7 +2,7 @@
 #include <string.h>
 int main(void)
 {
-    char a[1000000];
+    char a[10000];
     int i, b, c;
     while (scanf("%s", a) != EOF)
     {
