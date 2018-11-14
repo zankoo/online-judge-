@@ -32,5 +32,4 @@
         "stdio.h": "c",
         "cstdio": "c"
     }, // 效果效果比cpptools要好
-    "clang-format.style": "LLVM"
 }
