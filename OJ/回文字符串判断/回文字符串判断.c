@@ -4,7 +4,7 @@ int main(void)
 {
     char a[10000];
     int i, b, c;
-    while (scanf("%s", a) != EOF)
+    while (gets(a) != EOF)
     {
         b = strlen(a);
         for (i = 0, c = b - 1; i < c; i++, c--)
