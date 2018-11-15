@@ -2,9 +2,9 @@
 #include <string.h>
 int main(void)
 {
-    char a[10000];
+    char a[10000] = {0};
     int i, b, c;
-    while (gets(a) != EOF)
+    while (gets(a) != 0)
     {
         b = strlen(a);
         for (i = 0, c = b - 1; i < c; i++, c--)
