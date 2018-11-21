@@ -8,28 +8,25 @@ int main(void)
 {
     int score[1000] = {0};
     int score_, num = 0;
-    while (1)
+    for (int i = 0; i <= 999; i++)
     {
-        for (int i = 0; i <= 999; i++)
+        scanf("%d", &score_);
+        if (score_ == -1)
         {
-            scanf("%d", &score_);
-            if (score_ == -1)
-            {
-                num++;
-                break;
-            }
-            else
-            {
-                num++;
-                score[i] = score_;
-            }
+            num++;
+            break;
         }
-        num--;
-        printf("%d,%.2lf,%d,%d\n", num, average(score, num), max(score, num), min(score, num));
-        for (int i = 0; i <= num; i++)
-            score[i] = 0;
-        num = 0;
+        else
+        {
+            num++;
+            score[i] = score_;
+        }
     }
+    num--;
+    printf("%d,%.2lf,%d,%d\n", num, average(score, num), max(score, num), min(score, num));
+    for (int i = 0; i <= num; i++)
+        score[i] = 0;
+    num = 0;
 }
 
 double average(int a[], int b)
