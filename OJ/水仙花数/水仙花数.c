@@ -6,7 +6,7 @@ long long int water(long long int);
 int main(void)
 {
     long long int a;
-    for (a = 100; a <= 10000000000; a++)
+    for (a = 100; a <= 1000; a++)
     {
         if (a == water(a))
             printf("%lld\n", a);
