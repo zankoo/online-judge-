@@ -17,7 +17,5 @@ int main(void)
             d = 1;
         }
     }
-    getchar();
-    getchar();
     return 0;
 }

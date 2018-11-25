@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 double average(int a[], int);
-int max(int a[], int);
+int max_(int a[], int);
 int min(int a[], int);
 
 int main(void)
@@ -23,10 +23,11 @@ int main(void)
         }
     }
     num--;
-    printf("%d,%.2lf,%d,%d\n", num, average(score, num), max(score, num), min(score, num));
+    printf("%d,%.2lf,%d,%d\n", num, average(score, num), max_(score, num), min(score, num));
     for (int i = 0; i <= num; i++)
         score[i] = 0;
     num = 0;
+    return 0;
 }
 
 double average(int a[], int b)
@@ -43,22 +44,22 @@ double average(int a[], int b)
 
 int max(int a[], int b)
 {
-    int max = a[0];
-    for (int i = 0; i <= b - 2; i++)
+    int max_ = a[0];
+    for (int i = 0; i <= b - 1; i++)
     {
-        if (a[i] < a[i + 1])
-            max = a[i + 1];
+        if (a[i] > max_)
+            max_ = a[i];
     }
-    return max;
+    return max_;
 }
 
 int min(int a[], int b)
 {
-    int min = a[0];
-    for (int i = 0; i <= b - 2; i++)
+    int min_ = a[0];
+    for (int i = 0; i <= b - 1; i++)
     {
-        if (a[i] > a[i + 1])
-            min = a[i + 1];
+        if (a[i] < min_)
+            min_ = a[i];
     }
-    return min;
+    return min_;
 }
