@@ -13,7 +13,6 @@ int main(void)
         scanf("%d", &score_);
         if (score_ == -1)
         {
-            num++;
             break;
         }
         else
@@ -22,7 +21,6 @@ int main(void)
             score[i] = score_;
         }
     }
-    num--;
     printf("%d,%.2lf,%d,%d\n", num, average(score, num), max_(score, num), min(score, num));
     for (int i = 0; i <= num; i++)
         score[i] = 0;

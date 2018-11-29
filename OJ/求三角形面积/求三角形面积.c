@@ -1,6 +1,6 @@
 #include <math.h>
 #include <stdio.h>
-int main()
+int main(void)
 {
     int a, b, c;
     double s, p;
