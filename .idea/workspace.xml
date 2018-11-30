@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645c4477-b6ac-444c-a3c8-ee9bfcd4c3c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OJ/a.c" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/a.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OJ/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OJ/求三角形面积/求三角形面积.c" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/求三角形面积/求三角形面积.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OJ/求三角形面积/求三角形面积.exe" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/求三角形面积/求三角形面积.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OJ/简单成绩统计/简单成绩统计.c" beforeDir="false" afterPath="$PROJECT_DIR$/OJ/简单成绩统计/简单成绩统计.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,35 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OJ/a加减乘除b/a加减乘除b.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OJ/简单成绩统计/简单成绩统计.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/实验五/实验五1/Cpp1.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +30,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/OJ/简单成绩统计/简单成绩统计.c" />
+        <option value="$PROJECT_DIR$/实验七/实验七2.c" />
       </list>
     </option>
   </component>
@@ -97,12 +67,6 @@
               <item name="C" type="b2602c69:ProjectViewProjectNode" />
               <item name="C" type="462c0819:PsiDirectoryNode" />
               <item name="实验五" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="C" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C" type="462c0819:PsiDirectoryNode" />
-              <item name="实验五" type="462c0819:PsiDirectoryNode" />
-              <item name="实验五1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -154,17 +118,18 @@
       <workItem from="1543404215162" duration="234000" />
       <workItem from="1543404476106" duration="8000" />
       <workItem from="1543404509977" duration="897000" />
+      <workItem from="1543457306028" duration="915000" />
+      <workItem from="1543458250809" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1139000" />
+    <option name="totallyTimeSpent" value="2069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22989276" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23659517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -189,13 +154,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OJ/a加减乘除b/a加减乘除b.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -208,17 +166,31 @@
         <state relative-caret-position="-6" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OJ/a加减乘除b/a加减乘除b.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OJ/简单成绩统计/简单成绩统计.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/实验五/实验五1/Cpp1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="283">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/实验七/实验七2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" lean-forward="true" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
