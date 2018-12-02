@@ -5,20 +5,24 @@ long long int water(long long int);
 
 int main(void)
 {
-    long long int a;
-    for (a = 100; a <= 1000; a++)
+    int num;
+    while (scanf("%d", &num) != EOF)
     {
-        if (a == water(a))
-            printf("%lld\n", a);
+        long long int a;
+        for (a = pow(10,num-1); a < pow(10,num); a++)
+        {
+            if (a == water(a))
+                printf("%lld\n", a);
+        }
     }
     return 0;
 }
 
 long long int water(long long int a)
 {
-    long long int sum = 0,count,b;
+    long long int sum = 0, count, b;
     b = a;
-    for (count = 0; b != 0;count++)
+    for (count = 0; b != 0; count++)
     {
         b /= 10;
     }
