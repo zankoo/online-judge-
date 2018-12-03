@@ -1,31 +1,20 @@
+#include <math.h>
 #include <stdio.h>
-
-long int fac(long int a)
-{
-    long int b;
-    if (a == 0)
-        b = 1;
-    else
-        b = fac(a - 1) * a;
-    return b;
-}
-
-long int num(long int a)
-{
-    long int count;
-    for (count = 0; a != 0; count++)
-    {
-        a /= 10;
-    }
-    return count;
-}
 
 int main(void)
 {
-    long int num_;
-    while (scanf("%ld", &num_) != EOF)
+    int i, n;
+    double sum = 0.0;
+    while (scanf("%d", &n) != EOF)
     {
-        printf("%ld\n", num(fac(num_)));
+        for (i = 2; i <= n; i++)
+        {
+            sum += log10(i);
+        }
+        if (n == 1)
+            sum = 1;
+        printf("%d\n", (int)ceil(sum));
+        sum = 0.0;
     }
     return 0;
 }

@@ -1,37 +1,20 @@
+#include <math.h>
 #include <stdio.h>
-
-void relist(int a[], int b[])
-{
-    for (int i = 0; i < 54; i++)
-    {
-        if ((i + 1) % 2 == 0)
-            b[i] = a[26 + (i + 1) / 2];
-        else
-            b[i] = a[(i + 2) / 2 - 1];
-    }
-}
 
 int main(void)
 {
-    int list[54], relisted_list[54];
-    int count;
-    for (int i = 0; i < 54; i++)
+    int i, n;
+    double sum = 0.0;
+    while (scanf("%d", &n) != EOF)
     {
-        list[i] = i + 1;
-    }
-    scanf("%d", &count);
-    for (int k = 0; k < count; k++)
-    {
-        relist(list, relisted_list);
-        for (int j = 0; j < 54; j++)
+        for (i = 2; i <= n; i++)
         {
-            list[j] = relisted_list[j];
+            sum += log10(i);
         }
+        if (n == 1)
+            sum = 1;
+        printf("%d\n", (int)ceil(sum));
+        sum = 0.0;
     }
-    for(int m = 0; m < 53; m++)
-    {
-        printf("%d ", relisted_list[m]);
-    }
-    printf("%d", relisted_list[53]);
     return 0;
 }

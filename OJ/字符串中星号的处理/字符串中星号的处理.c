@@ -6,14 +6,14 @@ int main(void)
     while (scanf("%s", a) != EOF)
     {
         int i;
-        for (i = 0; i <= strlen(a) - 1; i++)
+        for (i = 0; i < strlen(a); i++)
         {
             if (a[i] == '*')
                 printf("*");
             else
                 break;
         }
-        for (i = 0; i <= strlen(a) - 1; i++)
+        for (i = 0; i < strlen(a); i++)
         {
             if (a[i] != '*')
                 printf("%c", a[i]);
