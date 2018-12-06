@@ -4,25 +4,15 @@ int main(void)
     int score;
     while (scanf("%d", &score) != EOF)
     {
-        if(score==-1)
+        if (score == -1)
             break;
         switch (score / 10)
         {
         case 0:
-            printf("不及格\n");
-            break;
         case 1:
-            printf("不及格\n");
-            break;
         case 2:
-            printf("不及格\n");
-            break;
         case 3:
-            printf("不及格\n");
-            break;
         case 4:
-            printf("不及格\n");
-            break;
         case 5:
             printf("不及格\n");
             break;
@@ -36,8 +26,6 @@ int main(void)
             printf("良\n");
             break;
         case 9:
-            printf("优\n");
-            break;
         case 10:
             printf("优\n");
             break;
