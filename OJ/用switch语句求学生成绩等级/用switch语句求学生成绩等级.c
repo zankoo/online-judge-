@@ -14,20 +14,20 @@ int main(void)
         case 3:
         case 4:
         case 5:
-            printf("涓嶅強鏍糪n");
+            printf("不及格\n");
             break;
         case 6:
-            printf("鍙婃牸\n");
+            printf("及格\n");
             break;
         case 7:
-            printf("涓璡n");
+            printf("中\n");
             break;
         case 8:
-            printf("鑹痋n");
+            printf("良\n");
             break;
         case 9:
         case 10:
-            printf("浼榎n");
+            printf("优\n");
             break;
         }
     }
