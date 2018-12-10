@@ -1,3 +1,5 @@
+//TSOJ 1052 每月的天数
+
 #include <stdio.h>
 int main(void)
 {

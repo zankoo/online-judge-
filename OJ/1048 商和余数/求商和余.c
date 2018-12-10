@@ -1,3 +1,5 @@
+//TSOJ 1048 商和余数
+
 #include <stdio.h>
 int main(void)
 {

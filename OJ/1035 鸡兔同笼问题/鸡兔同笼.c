@@ -1,3 +1,5 @@
+//TSOJ 1035 鸡兔同笼问题
+
 #include <stdio.h>
 int main(void)
 {

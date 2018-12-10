@@ -10,6 +10,26 @@ void swap(char a[], int n)
 		a[i] = a[j];
 		a[j] = t;
 	}
+	int flag = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] == '0' && a[i + 1] != '0')
+		{
+			flag = i + 1;
+			break;
+		}
+	}
+	for (int i = 0, j = flag; j < n; j++, i++)
+	{
+		a[i] = a[j];
+	}
+	if (flag)
+	{
+		for (int i = n - flag; i < n; i++)
+		{
+			a[i] = '\0';
+		}
+	}
 }
 
 int main(void)

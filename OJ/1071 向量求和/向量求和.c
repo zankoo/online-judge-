@@ -1,3 +1,5 @@
+//TSOJ 1071 向量求和
+
 #include <stdio.h>
 int main(void)
 {

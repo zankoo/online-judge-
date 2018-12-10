@@ -38,16 +38,16 @@ long long int water(long long int a)
 /*
 #include <math.h>
 #include <stdio.h>
-long long int main(void)
+int main(void)
 {
-    long long int a = 100, b, c, d;
+    int a = 100, b, c, d;
     while (a < 1000)
     {
         b = a % 10;
         c = (a / 10) % 10;
         d = (a / 100) % 10;
         if (a == pow(b, 3) + pow(c, 3) + pow(d, 3))
-            prlong long intf("%d\n", a);
+            prf("%d\n", a);
         a++;
     }
     return 0;
