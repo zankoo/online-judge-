@@ -30,6 +30,7 @@
     "clang.completion.enable": true,
     "files.associations": {
         "stdio.h": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "string.h": "c"
     }, // 效果效果比cpptools要好
 }
