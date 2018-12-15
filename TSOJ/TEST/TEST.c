@@ -1,67 +1,38 @@
 #include <stdio.h>
 #include <string.h>
-
-void swap(char a[], int n)
+int main()
 {
-	for (int i = 0, j = n - 1; i < j; i++, j--)
+	char a[100], b[100];
+	int n, i, j;
+	while (gets(a) != NULL)
 	{
-		char t;
-		t = a[i];
-		a[i] = a[j];
-		a[j] = t;
-	}
-	int flag = 0;
-	for (int i = 0; i < n; i++)
-	{
-		if (a[i] == '0' && a[i + 1] != '0')
+		i = 0;
+		while (a[i])
+			i++;
+		if (a[0] == '-')
 		{
-			flag = i + 1;
-			break;
-		}
-	}
-	for (int i = 0, j = flag; j < n; j++, i++)
-	{
-		a[i] = a[j];
-	}
-	if (flag)
-	{
-		for (int i = n - flag; i < n; i++)
-		{
-			a[i] = '\0';
-		}
-	}
-}
-
-int main(void)
-{
-	char numbers[60], minus_numbers[60];
-	int num;
-	while (gets(numbers) != NULL)
-	{
-		num = strlen(numbers);
-		if (numbers[0] == '-')
-		{
-			for (int i = 0; i < num - 1; i++)
-			{
-				minus_numbers[i] = numbers[i + 1];
-			}
-			swap(minus_numbers, num - 1);
-			printf("-");
-			for (int j = 0; j < num - 1; j++)
-			{
-				printf("%c", minus_numbers[j]);
-			}
-			printf("\n");
+			j = 1;
+			b[0] = '-';
+			for (n = i - 1; n >= 1; n--)
+				b[j++] = a[n];
+			b[i] = '\0';
 		}
 		else
 		{
-			swap(numbers, num);
-			for (int j = 0; j < num; j++)
-			{
-				printf("%c", numbers[j]);
-			}
-			printf("\n");
+			j = 0;
+			for (n = i - 1; n >= 0; n++)
+				b[j++] = a[n];
+			b[i] = '\0';
 		}
+		while (b[0] == 0)
+			for (j = 1; j < i + 1; j++)
+				b[j - 1] = b[j];
+		while (b[0] == '-' && b[1] == 0)
+			for (j = 1; j < i + 1; j++)
+				b[j] = b[j++];
+		puts(b);
 	}
+	getchar();
+	getchar();
 	return 0;
 }
