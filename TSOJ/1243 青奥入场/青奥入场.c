@@ -18,7 +18,7 @@ void sort(struct info infs[], int n)
         for (int j = 0; j < n - i - 1; j++)
         {
             struct info temp;
-            if (infs[j].country[0] > infs[j + 1].country[0])
+            if (strcmp(infs[j].country, infs[j + 1].country) > 0)
             {
                 temp = infs[j + 1];
                 infs[j + 1] = infs[j];
