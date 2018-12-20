@@ -2,16 +2,6 @@
 
 #include <stdio.h>
 
-int turn(int);
-
-int main(void)
-{
-    int a, b;
-    scanf("%d %d", &a, &b);
-    printf("%d\n%d\n", turn(a), turn(b));
-    return 0;
-}
-
 int turn(int a)
 {
     int b, c = 0;
@@ -23,3 +13,12 @@ int turn(int a)
     }
     return c / 10;
 }
+
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n%d\n", turn(a), turn(b));
+    return 0;
+}
+
