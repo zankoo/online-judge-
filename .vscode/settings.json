@@ -31,6 +31,8 @@
     "files.associations": {
         "stdio.h": "c",
         "cstdio": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "malloc.h": "c",
+        "time.h": "c"
     }, // 效果效果比cpptools要好
 }

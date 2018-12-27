@@ -14,14 +14,14 @@ int main(void)
     }
     for (int i = 0; i < num; i++)
     {
-        for (int i = 0; i < num-1; i++)
+        for (int i = 0; i < num - 1; i++)
         {
-            for (int j=i+1; j<num ; ++j)
+            for (int j = 0; j < num - i - 1; ++j)
             {
-                if (strcmp(a[i], a[j]) > 0)
+                if (strcmp(a[j + 1], a[j]) < 0)
                 {
-                    strcpy(temp, a[i]);
-                    strcpy(a[i], a[j]);
+                    strcpy(temp, a[j + 1]);
+                    strcpy(a[j + 1], a[j]);
                     strcpy(a[j], temp);
                 }
             }
